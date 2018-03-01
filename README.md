@@ -1,0 +1,2 @@
+# HoustonRest
+A dead-simple REST HTTP library for Java
