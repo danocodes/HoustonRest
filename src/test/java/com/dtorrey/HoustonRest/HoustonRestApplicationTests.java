@@ -13,4 +13,20 @@ public class HoustonRestApplicationTests {
 	public void contextLoads() {
 	}
 
+	@Test
+	public void initTest() throws Exception {
+
+		// Sample GET.
+		String responseString = new HoustonRest()
+				.url( "http://dtorrey.com" )
+				.body( "{some json}" )
+				.post( 1000 );
+
+		// Sample POST.
+		responseString = new HoustonRest()
+				.url( "http://dtorrey.com" )
+				.param( "name", "dan" )
+				.get( 1000 );
+
+	}
 }
