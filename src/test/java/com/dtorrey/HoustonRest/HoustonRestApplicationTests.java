@@ -18,15 +18,14 @@ public class HoustonRestApplicationTests {
 
 		// Sample GET.
 		String responseString = new HoustonRest()
-				.url( "http://dtorrey.com" )
-				.body( "{some json}" )
-				.post( 1000 );
+				.url( "https://google.com" )
+				.param( "name", "dan" )
+				.get( 1000 );
 
 		// Sample POST.
 		responseString = new HoustonRest()
 				.url( "http://dtorrey.com" )
-				.param( "name", "dan" )
-				.get( 1000 );
+				.post( 1000 );
 
 	}
 }
